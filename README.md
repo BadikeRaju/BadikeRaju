@@ -67,8 +67,9 @@ Let’s collaborate or chat! You can reach me here:
 
 ---
 
-### 🌍 **Fun Fact**
-- I’m a **coffee enthusiast** ☕ and love exploring **cutting-edge AI technologies** 🌍. When I’m not coding, I enjoy **open-source contributions** and mentoring junior developers.
+### 🌍 **Fun Fact**  
+- **Coffee lover** ☕ and a **tech explorer** 🌍 — I’m constantly learning and experimenting with new technologies.  
+- In my free time, I love contributing to **open-source projects**, **mentoring junior developers**, and staying updated on **AI innovations**.
 
 ---
 
