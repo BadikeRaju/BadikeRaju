@@ -77,8 +77,6 @@ Let’s create something extraordinary together! 🙌
 
 ---
 
-## 🐍 **Contribution Graph Snake**
-
 <div align="center">
   <img src="assets/github-contribution-grid-snake.svg" alt="Snake Game Animation">
 </div>
