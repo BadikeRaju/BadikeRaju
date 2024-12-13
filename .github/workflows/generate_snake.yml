@@ -1,7 +1,8 @@
 name: Generate Snake Game
 on:
-  schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight
+  push: # Runs whenever you push to the repository
+    branches:
+      - main # Replace with your default branch name if not 'main'
   workflow_dispatch: # Allows manual triggering of the workflow
 jobs:
   generate:
@@ -18,6 +19,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m 'Generated Snake Game'
+          git add dist/snake.svg
+          git commit -m 'Updated Snake Game'
           git push
