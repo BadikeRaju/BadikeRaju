@@ -1,24 +1,31 @@
 name: Generate Snake Game
+
 on:
-  push: # Runs whenever you push to the repository
+  push: # Automatically runs whenever you push to the repository
     branches:
-      - main # Replace with your default branch name if not 'main'
+      - main # Replace 'main' with your default branch name if different
   workflow_dispatch: # Allows manual triggering of the workflow
+
+permissions:
+  contents: write
+
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04 # Explicitly specify the stable version
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
+        
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
           github_user_name: BadikeRaju # Replace with your GitHub username
           outputs: dist/snake.svg
+
       - name: Push Snake Game to Repository
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add dist/snake.svg
-          git commit -m 'Updated Snake Game'
+          git commit -m "Updated Snake Game"
           git push
